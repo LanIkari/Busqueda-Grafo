@@ -444,19 +444,19 @@ namespace Grafo
                         Console.WriteLine("Lo encontré :D");
                         break;
                     }
-                    Console.WriteLine("Primer nodo en la lista de: " + ini.Nombre + ": " + ini.Listuki.First().Key.Nombre + " ->" +
-                        VARIABLESESTATICAS.MatrizDeAdyascencia[int.Parse(ini.Listuki.First().Key.Nombre), int.Parse(meta)]);
+                    Console.WriteLine("Lista de: " + ini.Nombre);
+                    Vertice mejor = ini.Listuki.First().Key;
+                    foreach (var x in ini.Listuki)
+                    {
+                        Console.WriteLine(x.Key.Nombre + " ->" + meta + " = " + VARIABLESESTATICAS.MatrizDeAdyascencia[int.Parse(x.Key.Nombre) - 1, int.Parse(meta) - 1]);
 
-                    if (VARIABLESESTATICAS.MatrizDeAdyascencia[int.Parse(ini.Listuki.First().Key.Nombre), int.Parse(meta)] <
-                        VARIABLESESTATICAS.MatrizDeAdyascencia[int.Parse(ini.Nombre) - 1, int.Parse(meta) - 1])
-                    {
-                        ini = ini.Listuki.First().Key;
+                        if ((VARIABLESESTATICAS.MatrizDeAdyascencia[int.Parse(mejor.Nombre) - 1, int.Parse(meta) - 1]) > VARIABLESESTATICAS.MatrizDeAdyascencia[int.Parse(x.Key.Nombre) - 1, int.Parse(meta) - 1])
+                        {
+                            mejor = x.Key;
+                        }
                     }
-                    else
-                    {
-                        Console.WriteLine("Ruta parcial obtenida. ");
-                        break;
-                    }
+                    Console.WriteLine();
+                    ini = mejor;
                     count++;
 
                 }
@@ -470,8 +470,8 @@ namespace Grafo
                 Console.WriteLine();
 
             }
-
             else { Console.WriteLine("No existe el nodo inicial, o meta."); }
+
         }
     }
 }

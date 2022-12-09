@@ -222,7 +222,7 @@ namespace Grafo
 
             //PARA EL NODO 25
             grafin.crearArco(new Vertice("25").Nombre, new Vertice("16").Nombre, 218);
-
+            grafin.crearArco(new Vertice("25").Nombre, new Vertice("20").Nombre, 33);
             //PARA EL NODO 26
             grafin.crearArco(new Vertice("26").Nombre, new Vertice("17").Nombre, 259);
             grafin.crearArco(new Vertice("26").Nombre, new Vertice("16").Nombre, 66);
@@ -335,6 +335,7 @@ namespace Grafo
             grafin.crearArco(new Vertice("16").Nombre, new Vertice("6").Nombre, 288);
             grafin.crearArco(new Vertice("16").Nombre, new Vertice("26").Nombre, 66);
             grafin.crearArco(new Vertice("16").Nombre, new Vertice("10").Nombre, 381);
+            grafin.crearArco(new Vertice("16").Nombre, new Vertice("25").Nombre, 118);
 
             //PARA EL NODO 17
             grafin.crearArco(new Vertice("17").Nombre, new Vertice("26").Nombre, 259);
