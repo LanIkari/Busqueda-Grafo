@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Busqueda-Grafo", "Busqueda-Grafo\Busqueda-Grafo.csproj", "{57DAD02C-CE5A-41E8-A341-AA4D4A9583B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57DAD02C-CE5A-41E8-A341-AA4D4A9583B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DAD02C-CE5A-41E8-A341-AA4D4A9583B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DAD02C-CE5A-41E8-A341-AA4D4A9583B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DAD02C-CE5A-41E8-A341-AA4D4A9583B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7C43F55-E157-40B1-8EEF-91FBFE5E0BBF}
+	EndGlobalSection
+EndGlobal
